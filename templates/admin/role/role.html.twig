@@ -1,0 +1,62 @@
+{% extends "admin/bars.html.twig" %}
+
+{% block contenpage %}
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h5> Listing </h5>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Liste des roles</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a href="{{ path('app_admin_new_role') }}" class="btn btn-success">NEW</a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div class="row">
+                            <form action="{{ path('app_admin_groupaction_role') }}" id="grpaction" method="post" name="grpaction">
+                                <div class="form-group form-inline">
+                                    <select class="form-control" name="action" required id="action_select">
+                                        <option value="">Action de groupe</option>
+                                        <option value="desactiver">Desactiver</option>
+                                        <option value="activer">Activer</option>
+                                        <option value="supprimer">Supprimer</option>
+                                    </select>
+                                    <button class="btn btn-primary" type="submit">Go!!</button>
+                                </div>
+
+                            </form>
+                            <table id="example" class="display table table-striped table-bordered dataminetables" >
+                                <thead>
+                                <th><input type="checkbox" id="select_all" name="select_all"></th>
+                                <th>roleName </th>
+                                <th>Libelle</th>						
+                                <th>Modifier</th>
+                                </thead>
+                                <tbody>
+                                {% for role in roles %}
+                                    <tr>
+                                        <td><input type="checkbox" class="chkgrp" name="chkgrp[]" value="{{ role.id }}"></td>
+                                        <td>{{ role.roleName}}</td>
+										<td>{{ role.libelle  }}</td>
+                                        <td><a class="btn btn-primary" href="{{ path('app_admin_edit_role',{"id":role.id}) }}"><i class="fa fa-edit"></i></a></td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

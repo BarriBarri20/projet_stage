@@ -1,0 +1,50 @@
+{% extends "admin/bars.html.twig" %}
+
+{% block contenpage %}
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h5> Listing </h5>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Liste des types de Serveur</h2>
+                       
+                        <div class="clearfix"></div>
+                    </div>
+                   
+
+                            </form>
+                            <table id="example" class="display table table-striped table-bordered dataminetables" >
+                                <thead>
+                                <th><input type="checkbox" id="select_all" name="select_all"></th>
+                                <th>Code Type</th>
+                                <th>Description</th>	
+                                <th>Protocol</th>
+                                <th>Modifier</th>
+                                </thead>
+                                <tbody>
+                                {% for typeserveur in typeserveurs %}
+                                    <tr>
+                                        <td><input type="checkbox" class="chkgrp" name="chkgrp[]" value="{{ typeserveur.id }}"></td>
+                                        <td>{{ typeserveur.codeType}}</td>
+					          <td>{{ typeserveur.Description }}</td>
+					          <td>{{ typeserveur.Protocol}}</td>
+                                        <td><a class="btn btn-primary" href="{{ path('app_admin_edit_typeserveur',{"id":typeserveur.id}) }}"><i class="fa fa-edit"></i></a></td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

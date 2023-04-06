@@ -1,0 +1,52 @@
+Updatecheck<|||>3<|||>1
+UpdatecheckLastrun<|||>1<|||>2023-02-08 12:17:55
+LastSessions<|||>1<|||>Unnamed
+LastActiveSession<|||>1<|||>Unnamed
+SessionManager_WindowLeft<|||>3<|||>478
+SessionManager_WindowTop<|||>3<|||>132
+ColWidths_connform.ListSessions<|||>1<|||>163,50,50,50,50,50,10
+ColsVisible_connform.ListSessions<|||>1<|||>0,1,4,6
+ColPositions_connform.ListSessions<|||>1<|||>0,1,2,3,4,5,6
+ColSort_connform.ListSessions<|||>1<|||>0,0
+Servers\MYSQL-CLI-LOCAL\SessionCreated<|||>1<|||>2023-02-08 12:18:02
+Servers\MYSQL-CLI-LOCAL\Host<|||>1<|||>127.0.0.1
+Servers\MYSQL-CLI-LOCAL\WindowsAuth<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\CleartextPluginEnabled<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\User<|||>1<|||>root
+Servers\MYSQL-CLI-LOCAL\Password<|||>1<|||>2
+Servers\MYSQL-CLI-LOCAL\LoginPrompt<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\Port<|||>1<|||>3306
+Servers\MYSQL-CLI-LOCAL\NetType<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\Compressed<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\LocalTimeZone<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\QueryTimeout<|||>3<|||>30
+Servers\MYSQL-CLI-LOCAL\KeepAlive<|||>3<|||>20
+Servers\MYSQL-CLI-LOCAL\FullTableStatus<|||>3<|||>1
+Servers\MYSQL-CLI-LOCAL\Databases<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\Library<|||>1<|||>libmariadb.dll
+Servers\MYSQL-CLI-LOCAL\Comment<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\StartupScriptFilename<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\TreeBackground<|||>3<|||>536870911
+Servers\MYSQL-CLI-LOCAL\SshExecutable<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\SSHtunnelHost<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\SSHtunnelHostPort<|||>3<|||>22
+Servers\MYSQL-CLI-LOCAL\SSHtunnelUser<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\SSHtunnelPassword<|||>1<|||>7
+Servers\MYSQL-CLI-LOCAL\SSHtunnelTimeout<|||>3<|||>4
+Servers\MYSQL-CLI-LOCAL\SSHtunnelPrivateKey<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\SSHtunnelPort<|||>3<|||>3307
+Servers\MYSQL-CLI-LOCAL\SSL_Active<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\SSL_Key<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\SSL_Cert<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\SSL_CA<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\SSL_Cipher<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\IgnoreDatabasePattern<|||>1<|||>
+Servers\MYSQL-CLI-LOCAL\LogFileDdl<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\LogFileDml<|||>3<|||>0
+Servers\MYSQL-CLI-LOCAL\LogFilePath<|||>1<|||>C:\Users\kasmi\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\MYSQL-CLI-LOCAL\ServerVersionFull<|||>1<|||>5.7.23 - MySQL Community Server (GPL)
+Servers\MYSQL-CLI-LOCAL\ConnectCount<|||>3<|||>1
+Servers\MYSQL-CLI-LOCAL\ServerVersion<|||>3<|||>50723
+Servers\MYSQL-CLI-LOCAL\LastConnect<|||>1<|||>2023-02-08 12:18:29
+Servers\MYSQL-CLI-LOCAL\lastUsedDB<|||>1<|||>osticket_carte
+Servers\MYSQL-CLI-LOCAL\QueryHistory\1<|||>1<|||>2023-02-08 12:19:58|osticket_carte|0|SELECT *<{{{><}}}>FROM ost_config

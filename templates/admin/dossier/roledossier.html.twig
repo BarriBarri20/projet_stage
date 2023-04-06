@@ -1,0 +1,56 @@
+{% extends "admin/bars.html.twig" %}
+
+{% block contenpage %}
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h5> Listing </h5>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Liste des roles</h2>
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div class="row">
+                            <form action="{{ path('app_admin_groupaction_categorie') }}" id="grpaction" method="post" name="grpaction">
+                                <div class="form-group form-inline">
+                                    <label for="modifier_nom">Nom dossier</label>
+                                    <input type="text" id="modifier_nom" name="modifier_nom">
+                                    <button class="btn btn-primary" type="submit">Modifier!</button>
+                                </div>
+
+                            </form>
+                            <table id="example" class="display table table-striped table-bordered dataminetables" >
+                                <thead>
+                                <th><input type="checkbox" id="select_all" name="select_all"></th>
+                                <th>Code role</th>
+                                <th>Droit d'acces</th>
+
+                                </thead>
+                                <tbody>
+                                {% for role in rolesdossier %}
+                                    <tr>
+                                        <td><input type="checkbox" class="chkgrp" name="chkgrp[]" value="{{ role.id }}"></td>
+
+                                        <td>{{ role.roleName }}</td>
+
+                                        <td><a class="btn btn-primary" href="{{ path('app_admin_edit_dossier',{"id":dossier.id}) }}"><i class="fa fa-edit"></i></a></td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

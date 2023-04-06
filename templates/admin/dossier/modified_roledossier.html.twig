@@ -1,0 +1,45 @@
+{% extends "admin/bars.html.twig" %}
+
+{% block contenpage %}
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h5> Listing des roles des dossiers </h5>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Liste des roles</h2>
+                      
+                        <div class="clearfix"></div>
+                    </div>
+                   
+                            <table id="example" class="display table table-striped table-bordered dataminetables" >
+                                <thead>
+                                <th><input type="checkbox" id="select_all" name="select_all"></th>
+                                <th>Code Role</th>
+								<th>Droits d'accès</th>
+                                </thead>
+                                <tbody>
+                                {% for rd in rolesdossiers  %}
+                                    <tr>
+                                        <td><input type="checkbox" class="chkgrp" name="chkgrp[]" value="{{ rd.id }}"></td>
+                                        <td>{{ rd.nomdossier }}</td>                  
+										<td><a href="{{ path('app_admin_delete_dossier', {'id': dossier.id}) }}" class="btn btn-danger disable-btn del-link" type="submit" ><i class="fa fa-trash"></i></a></td>
+
+								   </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

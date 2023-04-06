@@ -1,0 +1,52 @@
+{% extends "admin/bars.html.twig" %}
+
+{% block contenpage %}
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h5> Listing </h5>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Liste des Serveurs</h2>
+                       
+                        <div class="clearfix"></div>
+                    </div>
+                   
+
+                            </form>
+                            <table id="example" class="display table table-striped table-bordered dataminetables" >
+                                <thead>
+                                <th><input type="checkbox" id="select_all" name="select_all"></th>
+                                <th>Nom serveur</th>
+                                <th>Adresse IP</th>	
+                                <th>Port</th>
+                                <th>Type Serveur</th>																
+                                <th>Modifier</th>
+                                </thead>
+                                <tbody>
+                                {% for serveur in serveurs %}
+                                    <tr>
+                                        <td><input type="checkbox" class="chkgrp" name="chkgrp[]" value="{{ serveur.id }}"></td>
+                                        <td>{{ serveur.NomServeur}}</td>
+							  <td>{{ serveur.AdresseIP }}</td>
+							  <td>{{ serveur.Port }}</td>
+                                        <td>{%  if serveur.typeServeur %} {{ serveur.typeServeur.codeType}} {% endif %}</td>
+                                        <td><a class="btn btn-primary" href="{{ path('app_admin_edit_serveur',{"id":serveur.id}) }}"><i class="fa fa-edit"></i></a></td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
